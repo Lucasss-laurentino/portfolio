@@ -1,0 +1,83 @@
+
+.div-skills {
+    background-color:#132033;
+    overflow: hidden;
+}
+
+.card-skills h4 {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+.card-skills {
+    height: 300px;
+    margin: 10px 0px;
+    border: 1px solid white;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.card-skills-anime {
+    animation: slideDown 1s ease-in-out forwards;
+}
+
+
+.card-skills:nth-child(1) {
+    width: 30%;
+    background-color: #09162b;
+    position: absolute;
+    top: -200%;
+    left: 2%;
+    animation-delay: 0s;
+}
+
+.card-skills:nth-child(2) {
+    width: 30%;
+    background-color:#09162b;
+    position: absolute;
+    top: -200%;
+    left: 34%;
+    animation-delay: 0.1s;
+}
+
+.card-skills:nth-child(3) {
+    width: 30%;
+    background-color:#09162b;
+    position: absolute;
+    top: -200%;
+    left: 68%;
+    animation-delay: 0.2s;
+}
+
+.title-font {
+    color: white;
+    padding-top: 15px;
+    font-weight: 100;
+}
+
+@keyframes slideDown {
+    0% {
+        top: -94%;
+        z-index: 1;
+        opacity: 0.1;
+    }
+    20% {
+        opacity: 0.3;
+    }
+    40% {
+        opacity: 0.4;
+    }
+    60%{
+        opacity: 0.6;
+    }
+    100% {
+        top: 0%;
+        opacity: 1;
+    }
+}
