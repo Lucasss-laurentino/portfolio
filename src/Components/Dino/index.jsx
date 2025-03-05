@@ -1874,9 +1874,6 @@ export const Dino = () => {
         <noscript>You need to enable JavaScript to run this app.</noscript>
         <div id="main-frame-error" className="interstitial-wrapper" jstcache="0">
           <img className="icon icon-offline" jseval="updateIconClass(this.classList, iconClass)" jstcache="1" style={{ visibility: "hidden" }} />
-          <div className="runner-container" >
-            <canvas className="runner-canvas" width="600" height="150"></canvas>
-          </div>
         </div>
         <div id="offline-resources" jstcache="0">
           <div id="offline-resources-1x" jstcache="0">

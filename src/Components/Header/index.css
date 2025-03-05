@@ -56,6 +56,29 @@
     top: 0px;
 }
 
+@media (max-width: 768px) {
+    .div-text-animated {
+        height: 90vh;
+        position: absolute;
+        display: flex;
+        align-items: center;
+        top: 0px;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .div-circle {
+        width: 170px !important; 
+        height: 170px !important;
+        overflow: hidden;
+        border-radius: 50%; 
+        position: relative;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+    
+}
+
 .text-animated {
     display: inline-block;
     position: relative;
@@ -124,7 +147,6 @@
     }
 }
 
-/* Animação do cursor piscando */
 .text-animated::before {
     content: "|"; /* Cursor */
     display: inline-block;
@@ -133,20 +155,20 @@
 }
 
 .div-circle {
-    width: 270px; /* Defina uma largura fixa */
-    height: 270px; /* Defina uma altura fixa */
-    overflow: hidden; /* Esconde partes que saem do contêiner */
-    border-radius: 50%; /* Faz o contêiner ser redondo */
-    position: relative; /* Necessário para o posicionamento da imagem */
+    width: 270px; 
+    height: 270px;
+    overflow: hidden;
+    border-radius: 50%; 
+    position: relative;
 }
 
 .div-circle img {
-    width: 100%; /* A imagem ocupa 100% da largura do contêiner */
-    height: 100%; /* A imagem ocupa 100% da altura do contêiner */
-    object-fit: cover; /* Garante que a imagem cubra todo o contêiner */
-    position: absolute; /* Posiciona a imagem dentro do contêiner */
-    top: 0; /* Alinha ao topo */
-    left: 0; /* Alinha à esquerda */
+    width: 100%; 
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .margin-left {

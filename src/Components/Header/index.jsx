@@ -4,7 +4,7 @@ export const Header = () => {
     return (
         <>
             <div className="container-fluid p-0">
-                <div className="navbar">
+                <div className="navbar d-none d-md-flex">
                     <div className="col-3 d-flex justify-content-center">
                         <a href="https://github.com/Lucasss-laurentino" target='_blank'>
                             <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="#4fc3dc" className="bi bi-github github-icon mx-2" viewBox="0 0 16 16">
@@ -54,7 +54,12 @@ export const Header = () => {
                     </div>
                 </div>
                 <div className="col-12 div-text-animated text-white">
-                    <div className="col-7 margin-left">
+                    <div className="col-12 d-block d-md-none d-flex justify-content-center">
+                        <div className="div-photo div-circle">
+                            <img src="/perfil.jpeg" alt="" className="img-fluid" />
+                        </div>
+                    </div>
+                    <div className="col-12 col-md-7 margin-left responsive-text-animated">
                         <h2 className='text-animated'>
                             Desenvolvedor
                         </h2>
@@ -67,7 +72,7 @@ export const Header = () => {
                             </a>
                         </button>
                     </div>
-                    <div className="col-5 d-flex justify-content-center">
+                    <div className="col-5 d-none d-md-block d-flex justify-content-center">
                         <div className="div-photo div-circle">
                             <img src="/perfil.jpeg" alt="" className="img-fluid" />
                         </div>
