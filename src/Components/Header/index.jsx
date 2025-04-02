@@ -1,6 +1,8 @@
 import './index.css';
+import { AnimatedText } from './TextAnimated';
 
 export const Header = () => {
+    
     return (
         <>
             <div className="container-fluid p-0">
@@ -61,7 +63,7 @@ export const Header = () => {
                     </div>
                     <div className="col-12 col-md-7 margin-left responsive-text-animated">
                         <h2 className='text-animated'>
-                            Desenvolvedor
+                            Desenvolvedor <AnimatedText/>
                         </h2>
                         <p className='col-12 col-sm-10 m-0'>
                             Sou um desenvolvedor apaixonado por tecnologia e inovação, com experiência em criar soluções completas e eficientes.

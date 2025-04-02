@@ -1,15 +1,31 @@
-
 .div-projects {
-    background-color:#132033;
+    background-color: #132033;
     overflow: hidden;
+    padding: 20px;
 }
 
 .card {
     background-color: #09162B;
     border: 1px solid white;
     margin-bottom: 5%;
-    border-radius: 5%;
+    border-radius: 10px;
     overflow: hidden;
+    opacity: 0; /* Inicia invisível */
+    transform: translateY(50px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Animação quando entra na tela */
+.card-projects-anime-leftToRight {
+    opacity: 1;
+    transform: translateX(0);
+    animation: leftToRight 1s ease-in-out forwards;
+}
+
+.card-projects-anime-rightToLeft {
+    opacity: 1;
+    transform: translateX(0);
+    animation: rightToLeft 1s ease-in-out forwards;
 }
 
 .card-header {
@@ -19,58 +35,12 @@
 .card-description {
     color: white;
     max-height: 40vh;
-    display: flex;
-    flex-direction: column;
     padding: 5%;
     overflow-y: auto;
 }
 
-.card-projects-anime-left-to-right {
-    animation: leftToRight 1s ease-in-out forwards;
-}
-
-.card-projects-anime-right-to-left {
-    animation: rightToLeft 1s ease-in-out forwards;
-}
-
-.card:nth-child(1) {
-    top: 0%;
-    left: 100%;
-    animation-delay: 0.1s;
-}
-
-.card:nth-child(2) {
-    top: 0%;
-    left: -100%;
-    animation-delay: 0.2s;
-}
-
-.card:nth-child(3) {
-    top: 0%;
-    left: -100%;
-    animation-delay: 0.1s;
-}
-
-
-.card:nth-child(4) {
-    top: 0%;
-    left: -100%;
-    animation-delay: 0.2s;
-}
-
-.encapsula-cards-projects {
-    overflow: hidden;
-}
-
-.title-font {
-    color: white;
-    padding-top: 15px;
-    font-weight: 100;
-}
-
 .video-responsive {
     width: 100%;
-    max-width: 100%;
     height: auto;
     object-fit: cover;
 }
@@ -80,65 +50,25 @@
     text-decoration: none;
 }
 
-@keyframes slideDown {
-    0% {
-        top: -94%;
-        z-index: 1;
-        opacity: 0.1;
-    }
-    20% {
-        opacity: 0.3;
-    }
-    40% {
-        opacity: 0.4;
-    }
-    60%{
-        opacity: 0.6;
-    }
-    100% {
-        top: 0%;
-        opacity: 1;
-    }
-}
-
+/* Definição das animações */
 @keyframes leftToRight {
     0% {
-        left: -100%;
-        z-index: 1;
-        opacity: 0.1;
-    }
-    20% {
-        opacity: 0.3;
-    }
-    40% {
-        opacity: 0.4;
-    }
-    60%{
-        opacity: 0.6;
+        opacity: 0;
+        transform: translateX(-100%);
     }
     100% {
-        left: 0%;
         opacity: 1;
+        transform: translateX(0);
     }
 }
 
 @keyframes rightToLeft {
     0% {
-        left: 100%;
-        z-index: 1;
-        opacity: 0.1;
-    }
-    20% {
-        opacity: 0.3;
-    }
-    40% {
-        opacity: 0.4;
-    }
-    60%{
-        opacity: 0.6;
+        opacity: 0;
+        transform: translateX(100%);
     }
     100% {
-        left: 0%;
         opacity: 1;
+        transform: translateX(0);
     }
 }
